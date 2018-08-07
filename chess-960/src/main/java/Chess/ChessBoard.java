@@ -3,7 +3,7 @@ package Chess;
 import GameEntities.ChessPiece;
 
 /**
- * The Chessboard class is responsiable for mulipulating the board
+ * The ChessBoard class is responsible for manipulating the board
  * by moving and removing pieces.
  */
 public class ChessBoard {
@@ -17,17 +17,17 @@ public class ChessBoard {
     }
 
     /**
-     * Checks if piece is at a specificed location.
+     * Checks if piece is at a specified location.
      * @param row Row of the location.
-     * @param col Col of the location.
-     * @return Boolean of if theres a piece on location or not.
+     * @param col Column of the location.
+     * @return Boolean of if there's a piece on location or not.
      */
     public boolean isPieceAt(int row, int col) {
         return board[row][col] != null;
     }
 
     /**
-     * Places piece at location, if piece already exisit there, the old piece will be overwritten.
+     * Places piece at location, if piece already exists there, the old piece will be overwritten.
      * @param piece The piece to move.
      * @param location The location to move to.
      */
